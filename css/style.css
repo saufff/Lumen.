@@ -1,0 +1,78 @@
+:root {
+    --main-font-family:'Inter', sans-serif;
+    --background-color: #FFF5F0;
+    --color-border: #FF7931;
+    --color-main-text: #000000;
+    --color-secondary-text: #FFFFFF;
+    --color-shadow: #1A0B00;
+    --color-accent: #FF7931;
+ 
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: var(--main-font-family);
+    background-color: var(--background-color);
+    color: var(--color-main-text);
+}
+
+main {
+    flex-grow: 1;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.header {
+    box-shadow: 0 4px 10px white;
+    background-color: var(--background-color); 
+}
+
+.header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 117px; 
+}
+
+.header__mainmenu ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 77px; 
+    list-style: none;
+}
+.header__title {
+    font-family: var(--main-font-family);
+    font-size: 64px;     
+    font-weight: 700;
+    color: var(--color-accent);
+}
+
+/* ===== Ссылки меню ===== */
+.mainmenu__link {
+    color: var(--color-main-text);
+    text-decoration: none;
+    font-family: var(--main-font-family);
+    transition: color 0.3s ease;
+}
+
+.mainmenu__link:hover,
+.mainmenu__link:active,
+.mainmenu__link:focus {
+    color: var(--color-accent);
+}
