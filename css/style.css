@@ -37,7 +37,7 @@ main {
 }
 
 .header {
-    box-shadow: 0 4px 10px white;
+    box-shadow: 0 4px 10px rgb(248, 115, 5);
     background-color: var(--background-color); 
 }
 
@@ -53,7 +53,7 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 77px; 
+    gap: 36px; 
     list-style: none;
 }
 .header__title {
@@ -63,7 +63,6 @@ main {
     color: var(--color-accent);
 }
 
-/* ===== Ссылки меню ===== */
 .mainmenu__link {
     color: var(--color-main-text);
     text-decoration: none;
